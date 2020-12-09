@@ -1,19 +1,20 @@
 #include<iostream>
-using namespace std;
-void main()
-{
-float total = 0;
-float avg;
 
-	int average[5];
-	for (int i = 0; i < 5; i++)
+#include<string>
+using namespace std;
+int main()
+{
+	int  arr1[3][3] = { {},{} };
+	
+	for (int i = 0; i < 3; i++)
 	{
-		cin >> average[i];
-		
-		total = total + average[i];
-		
-		avg = total / 5;
+		for (int j = 0; j < 3; j++)
+		{
+			cout << arr1[i][j] << "  ";
+		}
+		cout << endl;
 	}
-	cout << avg;
-	system("pause");
+		
+		system("pause");
+		return 0;
 }
